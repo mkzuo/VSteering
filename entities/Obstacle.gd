@@ -3,7 +3,7 @@ extends KinematicBody2D
 var agent : SObstacle
 
 func _ready():
-	agent = SManager.create_obstacle(self, 18)
+	agent = SManager.create_obstacle(self, 22)
 	
 func _process(delta):
 	update()

@@ -6,7 +6,6 @@ var _owner_body : KinematicBody2D
 
 var collision_radius : int
 
-# Estos 2 metodos deben ser modificados para adaptar a un espacio isometrico
 func update_virtual_position() -> void:
 	_virtual_position = _owner_body.global_position
 

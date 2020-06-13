@@ -9,9 +9,9 @@ var entities_2 := []
 var obstacles := []
 
 export var spawn_num_1 := 4
-export var spawn_num_2 := 6
+export var spawn_num_2 := 0
 
-export var obstacles_num := 30
+export var obstacles_num := 20
 
 func _ready():
 	
@@ -22,7 +22,7 @@ func _ready():
 		$Entities.add_child(e)
 		entities_1.append(e)
 		e.global_position = Vector2(randf()*600, randf()*400)
-		e.agent.max_speed = 170
+		e.agent.max_speed = 190
 		e.agent.avoid_radius = 30
 	
 	for s in range(spawn_num_2):

@@ -57,7 +57,7 @@ func _calculate_agents_steering(delta):
 		var desired_velocity : Vector2 = (agent._seek_objective - agent._virtual_position).normalized()*agent.max_speed
 		
 		if distance < DISTANCE_TO_SLOW:
-			desired_velocity *= (distance/DISTANCE_TO_SLOW) * 0.75 
+			desired_velocity *= (distance/DISTANCE_TO_SLOW) * 0.7 
 		
 		agent._steering = (desired_velocity - agent.velocity)/agent.mass
 		
