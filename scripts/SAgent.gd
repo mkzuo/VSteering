@@ -32,7 +32,7 @@ func fixed(fixed : bool):
 	self.is_fixed = fixed
 
 func seek(objective : Vector2):
-	_seek_objective = objective*Vector2(1,2)
+	_seek_objective = objective
 	handle_move(true)
 
 func handle_move(handle : bool):
